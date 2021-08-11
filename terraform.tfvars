@@ -1,12 +1,13 @@
-artifact_bucket_name     = "terraformed-bucket"                       #Explains itself
+artifact_bucket_name     = ""                                         #Name of the S3 bucket created to store your build artifacts
 artifact_bucket_acl      = "private"                                  #Change if you want to make your artifact bucket public
+web_bucket_name          = ""                                         #Name of the public S3 bucket created for hosting your website
 index_loc                = "index.html"                               #Location of index relative to root dir
 error_loc                = "404.html"                                 #Location of 404 error relative to root dir
-git_URL                  = "https://github.com/SomeUser/SomeRepo.git" #Enter your github URL
 codebuild_service_arn    = ""                                         #Enter your service arn with CodeBuild priveleges
 codepipeline_service_arn = ""                                         #Enter your service arn with CodeBuild priveleges
+git_URL                  = "https://github.com/SomeUser/SomeRepo.git" #Enter your github URL
 repo_owner               = ""                                         #Username of the Repo owner
 oauth_token              = ""                                         #Github Oath Token
 poll_source_changes      = "true"                                     #Must be true for site to update with every source change, otherwise codepipeline will need to be triggered manually
-acm_certificate_arn      = ""                                         #Your ACM certificate arn
 route_53_zone_name       = ""                                         #Name of your Route53 Hosted Zone
+acm_certificate_arn      = ""                                         #Your ACM certificate arn

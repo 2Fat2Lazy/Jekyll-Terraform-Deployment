@@ -3,7 +3,7 @@ resource "aws_cloudfront_distribution" "cf" {
   price_class         = "PriceClass_100"
   default_root_object = var.index_loc
   is_ipv6_enabled     = true
-  aliases             = ["*.yoursite.co.uk", "yoursite.co.uk"] #Change to reflect your domain name, or omit if you don't have your own.
+  aliases             = ["*.yoursite.co.uk", "yoursite.co.uk"] #Change to reflect your domain name, or comment it out if you don't have your own.
 
   origin {
     domain_name = aws_s3_bucket.my-site.bucket_domain_name

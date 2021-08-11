@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraformed-bucket" {
-  bucket = var.bucket_name
+  bucket = var.artifact_bucket_name
   acl    = var.artifact_bucket_acl
 
   tags = {
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "terraformed-bucket" {
 }
 
 resource "aws_s3_bucket" "my-site" {
-  bucket = "<Name of S3 Bucket for storing your site>"
+  bucket = var.web_bucket_name
   acl    = "public-read"       #Required for public access
   policy = file("policy.json") #See policy.json and change to represent your S3 resource
 

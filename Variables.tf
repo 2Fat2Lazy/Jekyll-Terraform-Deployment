@@ -1,8 +1,12 @@
-variable "bucket_name" {
+variable "artifact_bucket_name" {
   type = string
 }
 
-variable "bucket_acl" {
+variable "artifact_bucket_acl" {
+  type = string
+}
+
+variable "web_bucket_name" {
   type = string
 }
 
