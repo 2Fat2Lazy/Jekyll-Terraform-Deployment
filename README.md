@@ -10,4 +10,4 @@ Step 2:
 Change the values in the terraform.tfvars file to represent your own deployment & Run "terraform apply" (If your feeling risky, but I'd recommend running 'terraform plan' first.)
 
 Step 3:
--Profit!
+Profit!
