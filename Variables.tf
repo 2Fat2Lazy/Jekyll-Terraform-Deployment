@@ -39,7 +39,7 @@ variable "repo_owner" {
 }
 
 variable "oauth_token" {
-  type = string
+  type      = string
   sensitive = true
 }
 

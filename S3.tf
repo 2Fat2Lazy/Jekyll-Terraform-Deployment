@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "terraformed-bucket" {
 
 resource "aws_s3_bucket" "my-site" {
   bucket = "<Name of S3 Bucket for storing your site>"
-  acl    = "public-read" #Required for public access
+  acl    = "public-read"       #Required for public access
   policy = file("policy.json") #See policy.json and change to represent your S3 resource
 
   website {
